@@ -1,0 +1,44 @@
+#set our variables
+hello = 'Hello '                                                    #assign a string with single quotes
+world = "world"                                                     #assign a string with double quotes
+run = "I'm going for a run"                                         #assign a string with a single quote in the string"
+places = "Manchester\nLondon\nMumbai"                               #prints a list of places on a new line each
+alphabet = "abcdefghijklm"
+name = "Rob"
+
+#practice printing
+print hello + world                                                 #print hello and world together in one sentence
+print run                                                           #print out the sentence we included with a single quote in the sentence
+print "Here is a list of places I have been running:"
+print places                                                        #prints the places on a new line each
+
+#printing lengths
+print len (hello)                                                   #tells us how long the hello string is
+print len (world)                                                   #tells us how long the world string is
+print len (run)                                                     #tells us how long the run string is
+
+#printing single positions
+print hello[0]                                                      #print the first letter of the hello variable
+print hello[4]                                                      #print the last actual letter (not character, that's a space) of the hello variable
+print hello[-2]                                                     #print the same letter using negative indexing (the last letter is -1, then you work backwards)
+
+#printing slices of the string
+print alphabet [2:]                                                 #prints C and everything afterwards in the alphabet string
+print alphabet [:3]                                                 #prints the first 3 characters in the alphabet string. It goes up to index 3 but DOES NOT include it
+print alphabet [3:6]                                                #prints the 3rd, 4th and 5th characters in the alphabet string
+print alphabet [::2]                                                #prints every odd letter in the alphabet (starts at the 0 position, end at the last position, and misses every other letter)
+print alphabet [1::2]                                               #prints every even letter (starts at the 1 position, end at the last position, and misses every other letter)
+print alphabet [::-1]                                               #prints the alphabet string in reverse (start at 0 position, end at the last position, but step through backwards)
+
+#uses concatonation to change "Rob" to "Bob"
+last_letters = name[1:]                                             #assings all characters in the name string past the first letter to a variable
+new_name = 'B' + last_letters                                       #adds B to the start of the letters we trimmed off the name variable
+print new_name                                                      #prints the new name
+print hello + new_name                                              #concatonates the hello and new name strings together
+
+#perform inbuilt operations on our strings
+print hello.upper()                                                 #capitalises hello string. HAS to have the brackets
+print hello.lower()                                                 #lower cases hello string. HAS to have the brackets
+print run.split()                                                   #splits the run string into a list of its component words
+print run.split('o')                                                #splits the run string after every O
+
